@@ -1,0 +1,172 @@
+img{
+    width:100%;
+}
+
+.flex-group{
+    display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
+}
+
+.gray{
+    color: #AAA;
+}
+
+.blueish{
+    color: #008375;
+}
+
+.click-me{
+    cursor: pointer;
+}
+
+.column1, .column2{
+    width: 50%;
+}
+
+.left-column{
+    width: 20%;
+    border-right: 1px solid #CCCCCC;
+    box-shadow: 1px 2px 8px 0px rgb(204, 204, 204);
+}
+
+.left-column .encabezado{
+    padding: 25px;
+    border-bottom: 2px solid #CCC;
+}
+
+.right-column{
+    width: 80%;
+}
+
+.right-column nav{
+    border-bottom: 2px solid rgb(204, 204, 204);
+    padding: 8px;
+    margin: 10px 20px;
+}
+
+.right-column nav ul{
+    list-style: none;
+}
+
+nav ul .search{
+    width: 40%;
+}
+
+nav .search input[type="text"]{
+    border-style: none;
+    width: 95%;
+}
+
+nav ul li {
+    width: 20%;
+}
+
+/* FIRST ITEM */
+
+.first-item{
+    padding: 10px 125px;
+    height: 550px;
+}
+
+.first-item p{
+    font-size: 3.8em;
+}
+
+.first-item img{
+    position: relative;
+    top: -150px;
+    left: -40px;
+}
+
+/* FIRST ITEM */
+
+/* SECOND ITEM */
+
+.second-item{
+    padding: 10px 125px;
+}
+
+.second-item > .column1 > div{
+    padding: 15px 0px;
+}
+
+.second-item > .column1 > div .text{
+    width: 50%;
+}
+
+.second-item > .column1 > div .text p:first-of-type{
+    font-weight: bold;
+    font-size: 2.5em;
+}
+
+.second-item > .column1 > div .text p:last-of-type{
+    line-height: 0px;
+}
+
+.second-item > .column1 > p {
+    font-size: 1.6em;
+}
+
+.second-item > .column1 .white-blue-button{
+    display: block;
+    padding: 20px;
+    background-color: transparent;
+    border: 2px solid #008375;
+    font-weight: bold;
+    transition: 1s ease;
+}
+
+.second-item > .column1 input[type="button"]:focus, .second-item > .column1 input[type="button"]:hover{
+    background-color: #17655d;
+    color: #FFF;
+}
+
+.second-item > .column1 .div-buttons{
+    padding: 15px 0px;
+}
+
+.second-item > .column1 .div-buttons .blue-white-button{
+    background-color: #17655d;
+    font-weight: bold;
+    transition: 1s ease;
+    border-style: none;
+    padding: 10px;
+    color: #FFF;
+    margin: 0px 10px 0px 0px;
+}
+
+.second-item > .column1 .div-buttons .blue-white-button:hover{
+    background-color: transparent;
+    color: #008375;
+}
+
+.second-item > .column1 > div .image img{
+    width: 85px;
+}
+
+/* SECOND ITEM */
+
+/* THIRD ITEM */
+
+.third-item{
+    padding: 10px 125px;
+}
+
+.third-item .column2{
+    padding: 120px 0px;
+}
+
+.third-item .column2 h2{
+    font-weight: bold;
+    font-size: 2.5em;
+}
+
+.third-item .column2 p{
+    font-size: 1.4em;
+}
+
+/* THIRD ITEM */

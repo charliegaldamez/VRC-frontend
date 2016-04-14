@@ -15,6 +15,10 @@ img{
     color: #AAA;
 }
 
+.bold{
+    font-weight: 800;
+}
+
 .blueish{
     color: #008375;
 }
@@ -38,14 +42,24 @@ img{
     border-bottom: 2px solid #CCC;
 }
 
+.left-column .encabezado .bold{
+    font-size: 1.5em;
+}
+
+.left-column .encabezado p:last-of-type{
+    line-height: 0px;
+}
+
 .right-column{
     width: 80%;
 }
 
 .right-column nav{
+    position: relative;
     border-bottom: 2px solid rgb(204, 204, 204);
     padding: 8px;
     margin: 10px 20px;
+    z-index: 1;
 }
 
 .right-column nav ul{
@@ -65,29 +79,36 @@ nav ul li {
     width: 20%;
 }
 
+.first-item, .second-item, .third-item{
+    padding: 10px 125px;
+}
+
 /* FIRST ITEM */
 
 .first-item{
-    padding: 10px 125px;
     height: 550px;
 }
 
-.first-item p{
+.first-item h2{
     font-size: 3.8em;
+    font-weight: 800;
 }
 
 .first-item img{
     position: relative;
     top: -150px;
-    left: -40px;
 }
 
 /* FIRST ITEM */
 
 /* SECOND ITEM */
 
-.second-item{
-    padding: 10px 125px;
+.second-item > .column1 {
+    width: 40%;
+}
+
+.second-item > .column2 {
+    width: 60%;
 }
 
 .second-item > .column1 > div{
@@ -95,11 +116,10 @@ nav ul li {
 }
 
 .second-item > .column1 > div .text{
-    width: 50%;
+    width: 70%;
 }
 
 .second-item > .column1 > div .text p:first-of-type{
-    font-weight: bold;
     font-size: 2.5em;
 }
 
@@ -108,7 +128,7 @@ nav ul li {
 }
 
 .second-item > .column1 > p {
-    font-size: 1.6em;
+    font-size: 1.4em;
 }
 
 .second-item > .column1 .white-blue-button{
@@ -152,16 +172,12 @@ nav ul li {
 
 /* THIRD ITEM */
 
-.third-item{
-    padding: 10px 125px;
-}
-
 .third-item .column2{
-    padding: 120px 0px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .third-item .column2 h2{
-    font-weight: bold;
     font-size: 2.5em;
 }
 
@@ -170,3 +186,26 @@ nav ul li {
 }
 
 /* THIRD ITEM */
+
+@media screen and (max-width: 767px){
+    
+    .first-item, .second-item, .third-item{
+        padding: 10px 25px;
+    }
+    
+    .left-column, .right-column, .second-item > .column1, .second-item > .column2, .second-item > .column1 .white-blue-button{
+        width: 100%;
+    }
+    
+    .left-column .encabezado{
+        text-align: center;
+    }
+    
+    .first-item{
+        height: auto;
+    }
+    
+    .first-item img{
+        top: 0px;
+    }
+}

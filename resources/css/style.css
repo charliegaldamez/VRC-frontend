@@ -2,6 +2,10 @@ img{
     width:100%;
 }
 
+a, a:hover{
+    text-decoration: none;
+}
+
 .flex-group{
     display: -webkit-flex;
 	display: -ms-flexbox;
@@ -11,16 +15,51 @@ img{
 	        flex-wrap: wrap;
 }
 
+.gray-box{
+    background: rgb(238, 238, 238);
+}
+
+.blueish-box{
+    background: #008375;
+}
+
 .gray{
     color: #AAA;
 }
 
-.bold{
-    font-weight: 800;
-}
-
 .blueish{
     color: #008375;
+}
+
+.white{
+    color: #FFF;
+}
+
+.square{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 1px;
+}
+
+.square.red{
+    background: rgb(192, 39, 44);
+}
+
+.square.blue{
+    background: rgb(0, 114, 187);
+}
+
+.square.gray{
+    background: rgb(152, 152, 152);
+}
+
+.square.black{
+    background: rgb(51, 51, 51);
+}
+
+.bold{
+    font-weight: 800;
 }
 
 .click-me{
@@ -33,6 +72,7 @@ img{
 
 .left-column{
     width: 20%;
+    z-index: 1;
     border-right: 1px solid #CCCCCC;
     box-shadow: 1px 2px 8px 0px rgb(204, 204, 204);
 }
@@ -48,6 +88,34 @@ img{
 
 .left-column .encabezado p:last-of-type{
     line-height: 0px;
+}
+
+.left-column .encabezado a{
+    display: block;
+    padding-top: 25px;
+}
+
+.left-column .side-menu{
+    list-style: outside none none;
+    padding: 0px;
+}
+
+.left-column .side-menu li{
+    padding: 20px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.left-column .side-menu li:hover, .left-column .side-menu li.active{
+    color: #FFF;
+    background: #008375;
+}
+
+.left-column .side-menu .sub-items{
+    background: rgb(238, 238, 238) none repeat scroll 0% 0%;
+    list-style: outside none none;
+    padding: 0px;
+    display: none;
 }
 
 .right-column{
@@ -187,6 +255,79 @@ nav ul li {
 
 /* THIRD ITEM */
 
+/* RELATED PRODUCTS */
+
+.related-products{
+    padding: 25px;
+}
+
+.related-products h3{
+    padding: 50px;
+    font-size: 2.2em;
+}
+
+.related-products .moto-boxes{
+    background: #FFF;
+    width: calc(33.33% - 30px);
+    margin: 0px 15px;
+    box-shadow: 2px 3px 4px rgb(170, 170, 170);
+    padding: 5px;
+}
+
+.related-products .moto-boxes .moto-image{
+    text-align: center;
+}
+
+.related-products .moto-boxes .moto-image img{
+    width: 50%;
+}
+
+.related-products .moto-boxes .moto-description{
+    margin: 30px;
+    border-top: 1px solid #CCC;
+    padding-top: 10px;
+}
+
+/* RELATED PRODUCTS */
+
+/* CONTACT US */
+
+.contact-us{
+    padding: 50px 125px;
+}
+
+.contact-us h3{
+    font-size: 1.8em;
+}
+
+.contact-us .us-text{
+    line-height: 25px;
+    margin-top: 40px;
+}
+
+.contact-us .form{
+    padding-top: 25px;
+}
+
+.contact-us .form .column1{
+    padding-right: 15px;
+}
+
+.contact-us .form .column2{
+    padding-left: 15px;
+}
+
+.contact-us .form input{
+    border-style: none;
+    background: transparent none repeat scroll 0% 0%;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border-bottom: 1px solid;
+}
+
+/* CONTACT US */
+
 @media screen and (max-width: 767px){
     
     .first-item, .second-item, .third-item{
@@ -208,4 +349,14 @@ nav ul li {
     .first-item img{
         top: 0px;
     }
+    
+    .related-products .moto-boxes{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .contact-us{
+        padding: 25px 50px;
+    }
+    
 }
